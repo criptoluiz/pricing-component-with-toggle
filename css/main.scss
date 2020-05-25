@@ -73,7 +73,7 @@ input:checked + .slider:before {
 .card-container {
   display: flex;
   flex-direction: column;
-
+  overflow: hidden;
     h2 {
       color: $grayishBlue;
     }
@@ -107,7 +107,6 @@ input:checked + .slider:before {
       background-color: white;
       padding: 3vh 6vw;
       border-radius: 7.5px;
-      box-shadow: 0.1px 0.1px 0.3px;
     }
 
     button {
@@ -141,4 +140,52 @@ input:checked + .slider:before {
     h3 {
       color: white;
     }
+}
+
+@media (min-width: 769px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .card-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    margin: 3vh 0;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 4vh 0;
+      box-shadow: 0 0 0;
+      font-size: 2vh;
+      padding: 3vh 3vw;
+    }
+
+    h3 {
+    font-size: 7vh;
+    }
+
+    p {
+      padding: 1.5vh 0;
+    }
+
+    .card-active {
+      height: 100%;
+
+
+    }
+
+    .card-inactive {
+      height: 90%;
+    }
+
+
+  }
+
+
 }
