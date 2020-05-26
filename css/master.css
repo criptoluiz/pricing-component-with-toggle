@@ -33,6 +33,15 @@ body {
   margin: 5vh auto;
 }
 
+.pricing-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pricing-toggle label {
+  margin: 0vw 0.5vw;
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -75,6 +84,11 @@ body {
 
 input:checked + .slider:before {
   transform: translateX(26px);
+}
+
+.label-text {
+  color: #b3b5c6;
+  font-weight: 700;
 }
 
 .card-container {
