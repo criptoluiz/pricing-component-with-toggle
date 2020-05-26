@@ -17,6 +17,7 @@
 </head>
 <body>
   <div class="container">
+    <img id="bg-top" src="images/bg-top.svg" alt="background image">
     <div class="pricing-toggle">
       <h1>Our Pricing</h1>
       <label>Annually</label>
@@ -30,34 +31,38 @@
     </div>
 
     <div class="card-container">
-    <div class="card-inactive">
-    <h2>Basic</h2>
-    <h3 id="basic-price"><span>&dollar;</span>19.99</h3>
-    <p>500 GB Storage</p>
-    <p>2 Users Allowed</p>
-    <p class="last">Send up to 3 GB</p>
-    <button class="button-inactive">Learn More</button>
+      <div class="card-inactive">
+        <h2>Basic</h2>
+        <h3 id="basic-price"><span>&dollar;</span>19.99</h3>
+        <p>500 GB Storage</p>
+        <p>2 Users Allowed</p>
+        <p class="last">Send up to 3 GB</p>
+        <button class="button-inactive">Learn More</button>
+      </div>
+
+      <div class="card-active">
+        <h2>Professional</h2>
+        <h3 id="pro-price"><span>&dollar;</span>24.99</h3>
+
+        <p>1 TB Storage</p>
+        <p>5 Users Allowed</p>
+        <p class="last">Send up to 10 GB</p>
+        <button class="button-active">Learn More</button>
+      </div>
+
+      <div class="card-inactive">
+        <h2>Master</h2>
+        <h3 id="master-price"><span>&dollar;</span>39.99</h3>
+
+        <p>2 TB Storage</p>
+        <p>10 Users Allowed</p>
+        <p class="last">Send up to 20 GB</p>
+        <button class="button-inactive">Learn More</button>
+      </div>
     </div>
 
-    <div class="card-active">
-    <h2>Professional</h2>
-    <h3 id="pro-price"><span>&dollar;</span>24.99</h3>
+    <img id="bg-bottom" src="images/bg-bottom.svg" alt="background image">
 
-    <p>1 TB Storage</p>
-    <p>5 Users Allowed</p>
-    <p class="last">Send up to 10 GB</p>
-    <button class="button-active">Learn More</button>
-    </div>
-
-    <div class="card-inactive">
-    <h2>Master</h2>
-    <h3 id="master-price"><span>&dollar;</span>39.99</h3>
-
-    <p>2 TB Storage</p>
-    <p>10 Users Allowed</p>
-    <p class="last">Send up to 20 GB</p>
-    <button class="button-inactive">Learn More</button>
-  </div></div>
   </div>
 
   <script type="text/javascript" src="main.js"></script>

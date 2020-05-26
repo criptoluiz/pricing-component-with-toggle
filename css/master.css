@@ -8,6 +8,20 @@ body {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   background-color: #f6f6fe;
+  overflow-x: hidden;
+}
+
+#bg-top {
+  position: absolute;
+  z-index: -1;
+  top: 0%;
+  right: -50%;
+}
+
+#bg-bottom {
+  position: absolute;
+  z-index: -2;
+  display: none;
 }
 
 .container {
@@ -167,6 +181,17 @@ input:checked + .slider:before {
   }
   .card-container .card-inactive {
     height: 90%;
+  }
+
+  #bg-top {
+    right: 0%;
+  }
+
+  #bg-bottom {
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
   }
 }
 
