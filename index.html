@@ -22,7 +22,7 @@
       <label>Annually</label>
       <!-- SWITCH -->
       <label class="switch">
-        <input type="checkbox">
+        <input id="toggleSwitch" class="monthly" type="checkbox">
         <span class="slider round"></span>
       </label>
 
@@ -32,7 +32,7 @@
     <div class="card-container">
     <div class="card-inactive">
     <h2>Basic</h2>
-    <h3><span>&dollar;</span>19.99</h3>
+    <h3 id="basic-price"><span>&dollar;</span>19.99</h3>
     <p>500 GB Storage</p>
     <p>2 Users Allowed</p>
     <p class="last">Send up to 3 GB</p>
@@ -41,7 +41,7 @@
 
     <div class="card-active">
     <h2>Professional</h2>
-    <h3><span>&dollar;</span>24.99</h3>
+    <h3 id="pro-price"><span>&dollar;</span>24.99</h3>
 
     <p>1 TB Storage</p>
     <p>5 Users Allowed</p>
@@ -51,7 +51,7 @@
 
     <div class="card-inactive">
     <h2>Master</h2>
-    <h3><span>&dollar;</span>39.99</h3>
+    <h3 id="master-price"><span>&dollar;</span>39.99</h3>
 
     <p>2 TB Storage</p>
     <p>10 Users Allowed</p>
@@ -59,5 +59,7 @@
     <button class="button-inactive">Learn More</button>
   </div></div>
   </div>
+
+  <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
